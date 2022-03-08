@@ -30,7 +30,7 @@ class main{
           s = s.replace(" ","");
             s = s.replace(",","");
               s = s.replace(".","");
-              
+
          if(!s.contains("pi")) return s;
           else if(s.charAt(0) == 'p' && s.charAt(1) == 'i'){
 
@@ -48,15 +48,20 @@ class main{
            else novaS += s.charAt(i);
       }*/
       
-
-        
-   
 }//https://docs.oracle.com/javase/tutorial/java/data/manipstrings.html
-    public static void main(String[] args) {
 
-       System.out.println(recursiveSwap("pitopilomeu"));
-       System.out.println(recursiveSwap("ApIa"));
-       System.out.println(recursiveSwap(" a  , p .. i a"));
+public static String invertString(String input) {
+   
+   if(input.length() < 1) return input;
+    
+    return input.charAt(input.length()-1) + invertString(input.substring(0,input.length()-1));
+
+}
+    public static void main(String[] args) {
+      
+      String string = "tEu cU";
+       System.out.println(invertString(string));
+
     }
 
 }
