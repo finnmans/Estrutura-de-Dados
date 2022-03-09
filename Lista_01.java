@@ -50,18 +50,43 @@ class main{
       
 }//https://docs.oracle.com/javase/tutorial/java/data/manipstrings.html
 
-public static String invertString(String input) {
+/*public static String invertString(String input) {
    
    if(input.length() < 1) return input;
     
     return input.charAt(input.length()-1) + invertString(input.substring(0,input.length()-1));
 
+}*/
+
+
+
+
+public static String invertString(String input) {
+   
+  if(input.length() < 1) return input;
+   
+   return input.charAt(input.length()-1) + invertString(input.substring(0,input.length()-1));
 }
+
+public static String isPalindrome(String input) {
+
+  input = input.toLowerCase();
+    input = input.replace(" ", "");
+
+
+    String palindrome = invertString(input);
+  
+    if(palindrome.equals(input)) return "E um palindromo";
+    else return "Nao e um palindromo";
+
+
+
+  }
     public static void main(String[] args) {
       
-      String string = "tEu cU";
-       System.out.println(invertString(string));
+      System.out.println(isPalindrome("teu cu"));
 
+      System.out.println(isPalindrome("A s a"));
     }
 
 }
