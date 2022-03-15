@@ -1,4 +1,4 @@
-package ED_Lista02;
+package ED_Listas;
 
 public interface Lists<T> {
     public void print();
