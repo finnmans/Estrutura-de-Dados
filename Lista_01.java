@@ -50,16 +50,6 @@ class main{
       
 }//https://docs.oracle.com/javase/tutorial/java/data/manipstrings.html
 
-/*public static String invertString(String input) {
-   
-   if(input.length() < 1) return input;
-    
-    return input.charAt(input.length()-1) + invertString(input.substring(0,input.length()-1));
-
-}*/
-
-
-
 
 public static String invertString(String input) {
    
