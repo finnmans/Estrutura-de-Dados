@@ -8,5 +8,8 @@ public class TesteLista {
         lista.inserir(5);
         lista.inserir(7);
         lista.inserir(1);
+        lista.print();
+        lista.remover(5);
+        lista.print();
     }
 }
