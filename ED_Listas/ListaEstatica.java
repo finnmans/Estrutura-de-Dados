@@ -26,10 +26,13 @@ public class ListaEstatica<T> implements Lists<T> {
 
     @Override
     public void inserir(T novo) {
+       
         if (qtd == elementos.length)
             expandirMemoria();
+       
+        
 
-        elementos[qtd] = novo;
+       //elementos[qtd] = novo;
         qtd++;
 
     }

@@ -68,7 +68,7 @@ public class ListaDinamica<T> implements Lists<T> {
             return null;
     }
 
-    @Override
+    @Override //A AULA PAROU EM 1:54 corno
     public void remover(T elemento) {
         if (inicio != null) {
             if (elemento.equals(inicio.elemento)) {
