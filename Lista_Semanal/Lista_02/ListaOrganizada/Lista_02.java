@@ -1,4 +1,4 @@
-package Lista_Semanal.Lista_02.Lista02_ListaOrganizada.Lista_Semanal.Lista_02;
+package Lista_Semanal.Lista_02.ListaOrganizada;
 
 public class Lista_02 {
 

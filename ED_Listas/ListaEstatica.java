@@ -32,7 +32,7 @@ public class ListaEstatica<T> implements Lists<T> {
        
         
 
-       //elementos[qtd] = novo;
+       elementos[qtd] = novo;
         qtd++;
 
     }
