@@ -1,4 +1,4 @@
-package Lista_Semanal;
+package Lista_Semanal.Lista_01;
 
 class main {
 
