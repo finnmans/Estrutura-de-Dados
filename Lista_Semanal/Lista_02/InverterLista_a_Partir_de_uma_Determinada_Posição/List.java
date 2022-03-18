@@ -1,6 +1,6 @@
 package Lista_Semanal.Lista_02.InverterLista_a_Partir_de_uma_Determinada_Posição;
 
-public class List<T>{
+ class List<T>{
 
     private T[] datas;
     private int size;
@@ -8,6 +8,12 @@ public class List<T>{
     public List(){
         this.datas = (T[]) new Object[10];
     }
+
+    public int getSize() {
+        return size;
+    }
+
+
 
     public void add(T n){
         if(size == datas.length ) expand();
@@ -24,15 +30,25 @@ public class List<T>{
             aux[i] = this.datas[i];
         }
 
-        this.datas = aux;
+       datas = aux;
+    }
+
+    public T search(int i) {
+        if (i < size)
+            return datas[i];
+        else
+            return null;
     }
     
     public String toString(){
-    	String tS = "";
-        for(int i = 0; i <= size; i++){
-            tS += ", " + this.datas[i];
+        String tS = "";
+        int salve = 0;
+        for(int i = 0; i < size-1; i++){
+            if(i == size) tS += this.datas[i];
+            tS += this.datas[i] + ", ";
+            salve = i;
         }
-        return "Lista:[" + tS + "]";
+        return "Lista:[" + tS + this.datas[salve+1] +"]";
     }
 
 
