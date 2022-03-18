@@ -1,8 +1,5 @@
-/*import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+
+package Lista_Semanal.Lista_02.ListaOrganizada;
 
 class No<T> implements Comparable{
 
@@ -87,7 +84,7 @@ class Lista<T> {
 }
 
 
-public class Solution {
+/*class Solution {
     public static void main(String[] args) throws IOException {
       	Lista lista = new Lista();
         Scanner scan = new Scanner(System.in);
