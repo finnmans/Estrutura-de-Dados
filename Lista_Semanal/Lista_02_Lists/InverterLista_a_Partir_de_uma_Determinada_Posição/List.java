@@ -1,4 +1,4 @@
-package Lista_Semanal.Lista_02.InverterLista_a_Partir_de_uma_Determinada_Posição;
+package Lista_Semanal.Lista_02_Lists.InverterLista_a_Partir_de_uma_Determinada_Posição;
 
  class List<T>{
 
@@ -49,6 +49,10 @@ package Lista_Semanal.Lista_02.InverterLista_a_Partir_de_uma_Determinada_Posiç�
             salve = i;
         }
         return "Lista:[" + tS + this.datas[salve+1] +"]";
+    }
+
+    public String print(){
+        return this.toString();
     }
 
 

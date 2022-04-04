@@ -1,4 +1,4 @@
-package Lista_Semanal.Lista_01;
+package Lista_Semanal.Lista_01_Recursividade;
 
 class main {
 

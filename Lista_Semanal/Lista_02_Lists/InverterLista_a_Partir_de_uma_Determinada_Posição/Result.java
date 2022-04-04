@@ -1,4 +1,4 @@
-package Lista_Semanal.Lista_02.InverterLista_a_Partir_de_uma_Determinada_Posição;
+package Lista_Semanal.Lista_02_Lists.InverterLista_a_Partir_de_uma_Determinada_Posição;
 
 class Result<T> extends List<T> {
 

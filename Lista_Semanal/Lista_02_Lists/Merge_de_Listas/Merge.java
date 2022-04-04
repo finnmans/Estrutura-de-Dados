@@ -119,14 +119,8 @@ class Result<T> {
 
         yPoint.add(s);
         
-        int somaSize = x.getSize() + y.getSize();
-
-        for(int i = 0; i < x.getSize() + y.getSize(); i++){
-
-        }
-        
        
         
-        //return s;
+        return s;
     }
 }

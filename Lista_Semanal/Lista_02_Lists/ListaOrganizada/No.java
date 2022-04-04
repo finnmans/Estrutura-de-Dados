@@ -1,4 +1,4 @@
-package Lista_Semanal.Lista_02.ListaOrganizada;
+package Lista_Semanal.Lista_02_Lists.ListaOrganizada;
 
 public class No<T> implements Comparable{
 

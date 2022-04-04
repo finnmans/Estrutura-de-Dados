@@ -1,4 +1,4 @@
-package Lista_Semanal.Lista_02.ListaOrganizada;
+package Lista_Semanal.Lista_02_Lists.ListaOrganizada;
 
 //Concatenar e Ordenar Lista 02 - Lista Organizada
 public class Lista<T> {
