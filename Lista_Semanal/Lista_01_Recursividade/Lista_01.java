@@ -18,6 +18,7 @@ class main {
       return value;
     else if (value < 1)
       return value = 1;
+
     return value * factorial(value - 1);
 
   }
@@ -81,12 +82,5 @@ class main {
       return "Nao e um palindromo";
 
   }                                        //FIM DO PALINDROMO
-
-  public static void main(String[] args) {
-
-    System.out.println(isPalindrome("A ba "));
-
-    System.out.println(isPalindrome("A s a"));
-  }
 
 }
