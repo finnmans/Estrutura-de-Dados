@@ -1,6 +1,6 @@
 package Lista_Semanal.Lista_02_Lists.InverterLista_a_Partir_de_uma_Determinada_Posição;
 
-import java.sql.Savepoint;
+
 
 class Node<T> {
     public T data;
@@ -68,7 +68,7 @@ class Result<T> extends List<T> {
 
     static List aux = new List<>();
     static List savePoint = new List<>();
-    
+
     public static String reverseList(String componentes, int posicao) {
 
         String s = "";
@@ -78,10 +78,10 @@ class Result<T> extends List<T> {
             posicao = 0;
 
         if (posicao > componentes.length())
-            return componentes;
+            posicao = componentes.length();
 
         if (componentes != null) {
-            
+
             for (int i = 0; i < componentes.length(); i++) {
                 if (componentes.charAt(i) != ' ')
                     s += componentes.charAt(i);
@@ -90,7 +90,7 @@ class Result<T> extends List<T> {
                     // aux.add(s);
                     s = "";
                 }
-                
+
             }
             savePoint.add(s);
 

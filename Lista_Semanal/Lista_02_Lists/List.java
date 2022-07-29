@@ -1,10 +1,13 @@
-package Lista_Semanal.Lista_02_Lists.InverterLista_a_Partir_de_uma_Determinada_Posição;
+package Lista_Semanal.Lista_02_Lists;
 
  class List<T>{
 
     private T[] datas;
     private int size;
 
+    /**
+     *GENERICS
+     */
     public List(){
         this.datas = (T[]) new Object[10];
     }
@@ -39,7 +42,6 @@ package Lista_Semanal.Lista_02_Lists.InverterLista_a_Partir_de_uma_Determinada_P
         else
             return null;
     }
-    
     public String toString(){
         String tS = "";
         int salve = 0;
