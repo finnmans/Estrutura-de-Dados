@@ -11,8 +11,8 @@ public class ListQueue<T> {
 
         if(first == null) first = last = newOne;
         else{
-             last.next = last;
-              last = newOne;
+             last.next = newOne;
+             last = newOne;
         }
         size++;
     }
