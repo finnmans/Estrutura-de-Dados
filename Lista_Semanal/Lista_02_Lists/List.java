@@ -5,9 +5,7 @@ package Lista_Semanal.Lista_02_Lists;
     private T[] datas;
     private int size;
 
-    /**
-     *GENERICS
-     */
+
     public List(){
         this.datas = (T[]) new Object[10];
     }

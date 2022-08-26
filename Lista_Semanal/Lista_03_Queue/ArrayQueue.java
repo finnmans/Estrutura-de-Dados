@@ -1,21 +1,21 @@
 package Lista_Semanal.Lista_03_Queue;
 
-public class Queue<T>{
+public class ArrayQueue<T>{
     private int tail,front;
     private int size, capacity;
     private T fila[];
-    
-    public Queue( int capacity){
-        
+
+    public ArrayQueue( int capacity){
+
         this.front = this.size = 0;
         this.capacity = capacity;
         tail = capacity - 1;
         fila = (T[]) new Object[capacity];
-        
+
     }
 
     public void enqueue(T i){
-    
+
         tail = position(tail);
         fila[tail] = i;
         size++;

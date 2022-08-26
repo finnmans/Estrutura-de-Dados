@@ -1,4 +1,4 @@
-package Lista_Semanal.Lista_02_Lists.InverterLista_a_Partir_de_uma_Determinada_Posição;
+package Lista_Semanal.Lista_02_Lists;
 
 public class Node<T>{
     public T data;
