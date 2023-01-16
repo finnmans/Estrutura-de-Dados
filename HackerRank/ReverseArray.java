@@ -20,16 +20,15 @@ class Result {
      */
 
     public static List<Integer> reverseArray(List<Integer> a) {
-    
+
         List<Integer> ar = new ArrayList<>();
-    
-    for(int i = 0; i < a.size(); i++){
-        
-        ar.add(a.get((a.size()-1)-i));
-        
-        
+
+        for (int i = 0; i < a.size(); i++) {
+
+            ar.add(a.get((a.size() - 1) - i));
+
         }
-    return ar;
+        return ar;
 
     }
 
@@ -43,17 +42,16 @@ public class Solution {
         int arrCount = Integer.parseInt(bufferedReader.readLine().trim());
 
         List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
+                .map(Integer::parseInt)
+                .collect(toList());
 
         List<Integer> res = Result.reverseArray(arr);
 
         bufferedWriter.write(
-            res.stream()
-                .map(Object::toString)
-                .collect(joining(" "))
-            + "\n"
-        );
+                res.stream()
+                        .map(Object::toString)
+                        .collect(joining(" "))
+                        + "\n");
 
         bufferedReader.close();
         bufferedWriter.close();
