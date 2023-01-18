@@ -1,4 +1,3 @@
-package HackerRank;
 
 import java.io.*;
 import java.util.*;
@@ -7,7 +6,7 @@ import static java.lang.System.in;
 
 public class isPrimerArrFunction {
 
-    class Prime {
+    static class Prime {
         public void checkPrime(int... num) {
             for (int number : num) {
                 if (number == 0 || number == 1)
