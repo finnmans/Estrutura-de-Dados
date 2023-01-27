@@ -62,7 +62,7 @@ public class Pqueue {
      class Solution {
         private final static Scanner scan = new Scanner(System.in);
         private final static Priorities priorities = new Priorities();
-
+        //just to keep it pretty
         public static void main(String[] args) {
             int totalEvents = Integer.parseInt(scan.nextLine());
             List<String> events = new ArrayList<>();
